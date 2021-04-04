@@ -10,47 +10,30 @@ namespace ConsoleApp7
 
        public double rating;
         public abstract string PremiereDate { get; set; }
-
-        /* public Anime(int rat)
-         {
-             rating = rat;
-         }*/
         public abstract void print();
 
     }
 
     class conan:Anime
 
-    {
-
-        private string PD;
-
-
-
+    {  private string PD;
         public conan(string PD, double reut)//:base (reuting)
         {
             PremiereDate=PD;
             rating = reut;
         }
         
-
-
         public override string PremiereDate
         {
             get { return PD; }
             set { PD = value; }
         }
 
-
-    
         public override void print()
         {
             Console.WriteLine("conan PremiereDate is :  " + PD + " reuting : " + rating + " ");
 
         }
-
-        
-
     }
 
     class onepice:Anime
@@ -67,8 +50,6 @@ namespace ConsoleApp7
             get { return PD; }
             set { PD = value; }
         }
-
-
 
         public override void print()
         {
